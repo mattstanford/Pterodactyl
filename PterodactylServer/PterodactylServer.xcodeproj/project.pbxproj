@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9093FD4241D3A5F00B7D1BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FD3241D3A5F00B7D1BA /* AppDelegate.swift */; };
+		C9093FD6241D3A5F00B7D1BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FD5241D3A5F00B7D1BA /* ViewController.swift */; };
+		C9093FD8241D3A6100B7D1BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9093FD7241D3A6100B7D1BA /* Assets.xcassets */; };
+		C9093FDB241D3A6100B7D1BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9093FD9241D3A6100B7D1BA /* Main.storyboard */; };
+		C9093FEA241D40DE00B7D1BA /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = C9093FE9241D40DE00B7D1BA /* Cartfile */; };
+		C9093FED241D50DF00B7D1BA /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9093FEC241D50DF00B7D1BA /* Swifter.framework */; };
+		C9093FF2241D521A00B7D1BA /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FF1241D521A00B7D1BA /* ServerManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C9093FD0241D3A5F00B7D1BA /* PterodactylServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PterodactylServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9093FD3241D3A5F00B7D1BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9093FD5241D3A5F00B7D1BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9093FD7241D3A6100B7D1BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9093FDA241D3A6100B7D1BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9093FDC241D3A6100B7D1BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9093FDD241D3A6100B7D1BA /* PterodactylServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PterodactylServer.entitlements; sourceTree = "<group>"; };
+		C9093FE9241D40DE00B7D1BA /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
+		C9093FEC241D50DF00B7D1BA /* Swifter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swifter.framework; path = Carthage/Build/Mac/Swifter.framework; sourceTree = "<group>"; };
+		C9093FF1241D521A00B7D1BA /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		C9093FF6241D552A00B7D1BA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9093FCD241D3A5F00B7D1BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9093FED241D50DF00B7D1BA /* Swifter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9093FC7241D3A5F00B7D1BA = {
+			isa = PBXGroup;
+			children = (
+				C9093FD2241D3A5F00B7D1BA /* PterodactylServer */,
+				C9093FD1241D3A5F00B7D1BA /* Products */,
+				C9093FEB241D50DE00B7D1BA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C9093FD1241D3A5F00B7D1BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9093FD0241D3A5F00B7D1BA /* PterodactylServer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9093FD2241D3A5F00B7D1BA /* PterodactylServer */ = {
+			isa = PBXGroup;
+			children = (
+				C9093FF6241D552A00B7D1BA /* .gitignore */,
+				C9093FD3241D3A5F00B7D1BA /* AppDelegate.swift */,
+				C9093FE9241D40DE00B7D1BA /* Cartfile */,
+				C9093FD5241D3A5F00B7D1BA /* ViewController.swift */,
+				C9093FD7241D3A6100B7D1BA /* Assets.xcassets */,
+				C9093FD9241D3A6100B7D1BA /* Main.storyboard */,
+				C9093FDC241D3A6100B7D1BA /* Info.plist */,
+				C9093FDD241D3A6100B7D1BA /* PterodactylServer.entitlements */,
+				C9093FF1241D521A00B7D1BA /* ServerManager.swift */,
+			);
+			path = PterodactylServer;
+			sourceTree = "<group>";
+		};
+		C9093FEB241D50DE00B7D1BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9093FEC241D50DF00B7D1BA /* Swifter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9093FCF241D3A5F00B7D1BA /* PterodactylServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9093FE0241D3A6100B7D1BA /* Build configuration list for PBXNativeTarget "PterodactylServer" */;
+			buildPhases = (
+				C9093FCC241D3A5F00B7D1BA /* Sources */,
+				C9093FCD241D3A5F00B7D1BA /* Frameworks */,
+				C9093FCE241D3A5F00B7D1BA /* Resources */,
+				C9093FF0241D50F700B7D1BA /* Carthage Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PterodactylServer;
+			productName = PterodactylServer;
+			productReference = C9093FD0241D3A5F00B7D1BA /* PterodactylServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9093FC8241D3A5F00B7D1BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Matt Stanford";
+				TargetAttributes = {
+					C9093FCF241D3A5F00B7D1BA = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = C9093FCB241D3A5F00B7D1BA /* Build configuration list for PBXProject "PterodactylServer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9093FC7241D3A5F00B7D1BA;
+			productRefGroup = C9093FD1241D3A5F00B7D1BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9093FCF241D3A5F00B7D1BA /* PterodactylServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9093FCE241D3A5F00B7D1BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9093FEA241D40DE00B7D1BA /* Cartfile in Resources */,
+				C9093FD8241D3A6100B7D1BA /* Assets.xcassets in Resources */,
+				C9093FDB241D3A6100B7D1BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9093FF0241D50F700B7D1BA /* Carthage Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/Swifter.framework",
+			);
+			name = "Carthage Copy Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Swifter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9093FCC241D3A5F00B7D1BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9093FD6241D3A5F00B7D1BA /* ViewController.swift in Sources */,
+				C9093FF2241D521A00B7D1BA /* ServerManager.swift in Sources */,
+				C9093FD4241D3A5F00B7D1BA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9093FD9241D3A6100B7D1BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9093FDA241D3A6100B7D1BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9093FDE241D3A6100B7D1BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9093FDF241D3A6100B7D1BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C9093FE1241D3A6100B7D1BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PterodactylServer/PterodactylServer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 735H4JCR7N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = PterodactylServer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattstanford.PterodactylServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C9093FE2241D3A6100B7D1BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PterodactylServer/PterodactylServer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 735H4JCR7N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = PterodactylServer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattstanford.PterodactylServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9093FCB241D3A5F00B7D1BA /* Build configuration list for PBXProject "PterodactylServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9093FDE241D3A6100B7D1BA /* Debug */,
+				C9093FDF241D3A6100B7D1BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9093FE0241D3A6100B7D1BA /* Build configuration list for PBXNativeTarget "PterodactylServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9093FE1241D3A6100B7D1BA /* Debug */,
+				C9093FE2241D3A6100B7D1BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9093FC8241D3A5F00B7D1BA /* Project object */;
+}

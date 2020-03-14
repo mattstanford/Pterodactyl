@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		C9093FBF240AE17000B7D1BA /* PterodactylLib.h in Headers */ = {isa = PBXBuildFile; fileRef = C9093FBD240AE17000B7D1BA /* PterodactylLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9093FC6240AE25B00B7D1BA /* Pterodactyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FC5240AE25B00B7D1BA /* Pterodactyl.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C977B88B241D560400C14B9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C977B887241D560400C14B9F /* PterodactylServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C9093FD0241D3A5F00B7D1BA;
+			remoteInfo = PterodactylServer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C9093FBA240AE17000B7D1BA /* PterodactylLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PterodactylLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9093FBD240AE17000B7D1BA /* PterodactylLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PterodactylLib.h; sourceTree = "<group>"; };
 		C9093FBE240AE17000B7D1BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9093FC5240AE25B00B7D1BA /* Pterodactyl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pterodactyl.swift; sourceTree = "<group>"; };
+		C9093FF7241D553800B7D1BA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		C977B887241D560400C14B9F /* PterodactylServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PterodactylServer.xcodeproj; path = PterodactylServer/PterodactylServer.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +60,21 @@
 		C9093FBC240AE17000B7D1BA /* PterodactylLib */ = {
 			isa = PBXGroup;
 			children = (
+				C9093FF7241D553800B7D1BA /* .gitignore */,
 				C9093FBD240AE17000B7D1BA /* PterodactylLib.h */,
 				C9093FBE240AE17000B7D1BA /* Info.plist */,
+				C9093FC5240AE25B00B7D1BA /* Pterodactyl.swift */,
+				C977B887241D560400C14B9F /* PterodactylServer.xcodeproj */,
 			);
 			path = PterodactylLib;
+			sourceTree = "<group>";
+		};
+		C977B888241D560400C14B9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C977B88C241D560400C14B9F /* PterodactylServer.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +120,7 @@
 				TargetAttributes = {
 					C9093FB9240AE17000B7D1BA = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -109,12 +135,28 @@
 			mainGroup = C9093FB0240AE17000B7D1BA;
 			productRefGroup = C9093FBB240AE17000B7D1BA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C977B888241D560400C14B9F /* Products */;
+					ProjectRef = C977B887241D560400C14B9F /* PterodactylServer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C9093FB9240AE17000B7D1BA /* PterodactylLib */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C977B88C241D560400C14B9F /* PterodactylServer.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = PterodactylServer.app;
+			remoteRef = C977B88B241D560400C14B9F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C9093FB8240AE17000B7D1BA /* Resources */ = {
@@ -131,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9093FC6240AE25B00B7D1BA /* Pterodactyl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +303,7 @@
 		C9093FC3240AE17000B7D1BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 735H4JCR7N;
@@ -276,6 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattstanford.PterodactylLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +329,7 @@
 		C9093FC4240AE17000B7D1BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 735H4JCR7N;
