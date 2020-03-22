@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9258B8D24280B9F003D026E /* PterodactylLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9258B8C24280B9F003D026E /* PterodactylLib.framework */; platformFilter = ios; settings = {ATTRIBUTES = (Weak, ); }; };
 		C9D79BBA2421B7B9009F111A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D79BB92421B7B9009F111A /* AppDelegate.swift */; };
 		C9D79BBC2421B7B9009F111A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D79BBB2421B7B9009F111A /* SceneDelegate.swift */; };
 		C9D79BBE2421B7B9009F111A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D79BBD2421B7B9009F111A /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		C9258B782421BC3A003D026E /* PterodactylExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PterodactylExample.entitlements; sourceTree = "<group>"; };
+		C9258B8C24280B9F003D026E /* PterodactylLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PterodactylLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D79BB62421B7B9009F111A /* PterodactylExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PterodactylExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D79BB92421B7B9009F111A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9D79BBB2421B7B9009F111A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,18 +55,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9258B8D24280B9F003D026E /* PterodactylLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9258B8B24280B9F003D026E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9258B8C24280B9F003D026E /* PterodactylLib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C9D79BAD2421B7B9009F111A = {
 			isa = PBXGroup;
 			children = (
 				C9D79BB82421B7B9009F111A /* PterodactylExample */,
 				C9D79BCF2421B7B9009F111A /* PterodactylExampleUITests */,
 				C9D79BB72421B7B9009F111A /* Products */,
+				C9258B8B24280B9F003D026E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +140,7 @@
 				C9D79BC82421B7B9009F111A /* Sources */,
 				C9D79BC92421B7B9009F111A /* Frameworks */,
 				C9D79BCA2421B7B9009F111A /* Resources */,
+				C9258B8E24280BE8003D026E /* Run Server Run Script */,
 			);
 			buildRules = (
 			);
@@ -196,6 +209,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9258B8E24280BE8003D026E /* Run Server Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Server Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nopen -a \"${SOURCE_ROOT}/../PterodactylLib/Built_Product/PterodactylServer.app\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9D79BB22421B7B9009F111A /* Sources */ = {

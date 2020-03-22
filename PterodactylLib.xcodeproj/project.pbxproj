@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C9093FBF240AE17000B7D1BA /* PterodactylLib.h in Headers */ = {isa = PBXBuildFile; fileRef = C9093FBD240AE17000B7D1BA /* PterodactylLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9093FC6240AE25B00B7D1BA /* Pterodactyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FC5240AE25B00B7D1BA /* Pterodactyl.swift */; };
+		C9258B88242808BD003D026E /* PterodactylServer.app in Resources */ = {isa = PBXBuildFile; fileRef = C9258B87242808BD003D026E /* PterodactylServer.app */; };
+		C9258B8A24280B40003D026E /* run_server.sh in Resources */ = {isa = PBXBuildFile; fileRef = C9258B8924280A6F003D026E /* run_server.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +19,8 @@
 		C9093FBE240AE17000B7D1BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9093FC5240AE25B00B7D1BA /* Pterodactyl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pterodactyl.swift; sourceTree = "<group>"; };
 		C9093FF7241D553800B7D1BA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		C9258B87242808BD003D026E /* PterodactylServer.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = PterodactylServer.app; sourceTree = "<group>"; };
+		C9258B8924280A6F003D026E /* run_server.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = run_server.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,12 +53,22 @@
 		C9093FBC240AE17000B7D1BA /* PterodactylLib */ = {
 			isa = PBXGroup;
 			children = (
+				C9258B86242808A6003D026E /* Built_Product */,
 				C9093FF7241D553800B7D1BA /* .gitignore */,
 				C9093FBD240AE17000B7D1BA /* PterodactylLib.h */,
 				C9093FBE240AE17000B7D1BA /* Info.plist */,
 				C9093FC5240AE25B00B7D1BA /* Pterodactyl.swift */,
+				C9258B8924280A6F003D026E /* run_server.sh */,
 			);
 			path = PterodactylLib;
+			sourceTree = "<group>";
+		};
+		C9258B86242808A6003D026E /* Built_Product */ = {
+			isa = PBXGroup;
+			children = (
+				C9258B87242808BD003D026E /* PterodactylServer.app */,
+			);
+			path = Built_Product;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +141,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9258B88242808BD003D026E /* PterodactylServer.app in Resources */,
+				C9258B8A24280B40003D026E /* run_server.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

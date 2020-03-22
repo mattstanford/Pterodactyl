@@ -14,7 +14,21 @@
 		C9093FEA241D40DE00B7D1BA /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = C9093FE9241D40DE00B7D1BA /* Cartfile */; };
 		C9093FED241D50DF00B7D1BA /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9093FEC241D50DF00B7D1BA /* Swifter.framework */; };
 		C9093FF2241D521A00B7D1BA /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FF1241D521A00B7D1BA /* ServerManager.swift */; };
+		C9258B7E242807E7003D026E /* PterodactylServer.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = C9093FD0241D3A5F00B7D1BA /* PterodactylServer.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9258B7D242807BF003D026E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "${SOURCE_ROOT}/../PterodactylLib/Built_Product";
+			dstSubfolderSpec = 0;
+			files = (
+				C9258B7E242807E7003D026E /* PterodactylServer.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C9093FD0241D3A5F00B7D1BA /* PterodactylServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PterodactylServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +108,7 @@
 				C9093FCD241D3A5F00B7D1BA /* Frameworks */,
 				C9093FCE241D3A5F00B7D1BA /* Resources */,
 				C9093FF0241D50F700B7D1BA /* Carthage Copy Frameworks */,
+				C9258B7D242807BF003D026E /* CopyFiles */,
 			);
 			buildRules = (
 			);
