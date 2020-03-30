@@ -30,7 +30,7 @@ class PterodactylExampleUITests: XCTestCase {
         sleep(1)
 
         //Trigger a push notification
-        pterodactyl.triggerSimulatorNotification(withPayload: PushNotificationPayload.pushType1.payloadAsDict)
+        pterodactyl.triggerSimulatorNotification(withMessage: "here's a simple message")
         
         //Tap the notification when it appears
         let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")

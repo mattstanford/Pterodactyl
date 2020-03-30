@@ -26,7 +26,17 @@ public class Pterodactyl {
         self.targetAppBundleId = bundleId
     }
     
-    public func triggerSimulatorNotification(withPayload payload: [String: Any]) {
+    public func triggerSimulatorNotification(withMessage message: String, additionalKeys: [String: Any]? = nil) {
+        var innerAlert: [String: Any] = ["alert": message]
+        if let additionalKeys = additionalKeys {
+            //Merge dictionaries, override duplicates with the ones supplied by "additionalKeys"
+            innerAlert = innerAlert.merging(additionalKeys) { (_, new) in new }
+        }
+        let payload = ["aps": innerAlert]
+        triggerSimulatorNotification(withFullPayload: payload)
+    }
+    
+    public func triggerSimulatorNotification(withFullPayload payload: [String: Any]) {
         let endpoint = "http://localhost:8081/simulatorPush"
         
         guard let endpointUrl = URL(string: endpoint) else {
