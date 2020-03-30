@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import PterodactylLib
 
 class PterodactylExampleUITests: XCTestCase {
 
@@ -21,6 +22,7 @@ class PterodactylExampleUITests: XCTestCase {
     
     func testSimulatorPush() {
         
+        let pterodactyl = Pterodactyl(targetApp: app)
         waitForElementToAppear(object: app.staticTexts["Pterodactyl Example"])
         
         //Tap the home button
@@ -28,7 +30,7 @@ class PterodactylExampleUITests: XCTestCase {
         sleep(1)
 
         //Trigger a push notification
-        triggerSimulatorNotification(withPayload: .pushType1)
+        pterodactyl.triggerSimulatorNotification(withPayload: PushNotificationPayload.pushType1.payloadAsDict)
         
         //Tap the notification when it appears
         let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")
@@ -37,32 +39,6 @@ class PterodactylExampleUITests: XCTestCase {
         springBoardNotification.tap()
 
         waitForElementToAppear(object: app.staticTexts["Pterodactyl Example"])
-    }
-    
-    private func triggerSimulatorNotification(withPayload payload: PushNotificationPayload) {
-        let endpoint = "http://localhost:8081/simulatorPush"
-        
-        guard let endpointUrl = URL(string: endpoint) else {
-            return
-        }
-        
-        //Make JSON to send to send to server
-        var json = [String:Any]()
-        json["simulatorId"] = "booted"
-        json["appBundleId"] = "com.mattstanford.PterodactylExample"
-        json["pushPayload"] = payload.payloadAsDict
-        
-        guard let data = try? JSONSerialization.data(withJSONObject: json, options: []) else {
-            return
-        }
-        
-        var request = URLRequest(url: endpointUrl)
-        request.httpMethod = "POST"
-        request.httpBody = data
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-        let task = URLSession.shared.dataTask(with: request)
-        task.resume()
     }
     
     func waitForElementToAppear(object: Any) {

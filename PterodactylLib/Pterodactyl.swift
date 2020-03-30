@@ -7,23 +7,27 @@
 //
 
 import Foundation
+import XCTest
 
 public class Pterodactyl {
     
     let targetAppBundleId: String
-    var targetSimulatorId: String
     var serverHost: String = "localhost"
     var serverPort: in_port_t = 8081
     
     let pushEndpoint = "simulatorPush"
     
-    init(targetAppBundleId: String, targetSimulatorId: String) {
+    public init(targetAppBundleId: String) {
         self.targetAppBundleId = targetAppBundleId
-        self.targetSimulatorId = targetSimulatorId
     }
     
-    func triggerSimulatorNotification(withPayload payload: [String: Any]) {
-        let endpoint = "http://\(serverHost):\(serverPort)/\(pushEndpoint)"
+    public init(targetApp: XCUIApplication) {
+        let bundleId = targetApp.value(forKey: "bundleID") as! String
+        self.targetAppBundleId = bundleId
+    }
+    
+    public func triggerSimulatorNotification(withPayload payload: [String: Any]) {
+        let endpoint = "http://localhost:8081/simulatorPush"
         
         guard let endpointUrl = URL(string: endpoint) else {
             return
@@ -31,8 +35,8 @@ public class Pterodactyl {
         
         //Make JSON to send to send to server
         var json = [String:Any]()
-        json["simulatorId"] = targetSimulatorId
-        json["appBundleId"] = targetSimulatorId
+        json["simulatorId"] = ProcessInfo.processInfo.environment["SIMULATOR_UDID"]
+        json["appBundleId"] = targetAppBundleId
         json["pushPayload"] = payload
         
         guard let data = try? JSONSerialization.data(withJSONObject: json, options: []) else {

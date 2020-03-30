@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9258B8D24280B9F003D026E /* PterodactylLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9258B8C24280B9F003D026E /* PterodactylLib.framework */; platformFilter = ios; settings = {ATTRIBUTES = (Weak, ); }; };
+		C96048D724326F0900641554 /* PterodactylLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96048D624326F0900641554 /* PterodactylLib.framework */; platformFilter = ios; };
 		C9D79BBA2421B7B9009F111A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D79BB92421B7B9009F111A /* AppDelegate.swift */; };
 		C9D79BBC2421B7B9009F111A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D79BBB2421B7B9009F111A /* SceneDelegate.swift */; };
 		C9D79BBE2421B7B9009F111A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D79BBD2421B7B9009F111A /* ViewController.swift */; };
@@ -30,6 +30,7 @@
 /* Begin PBXFileReference section */
 		C9258B782421BC3A003D026E /* PterodactylExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PterodactylExample.entitlements; sourceTree = "<group>"; };
 		C9258B8C24280B9F003D026E /* PterodactylLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PterodactylLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96048D624326F0900641554 /* PterodactylLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PterodactylLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D79BB62421B7B9009F111A /* PterodactylExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PterodactylExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D79BB92421B7B9009F111A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9D79BBB2421B7B9009F111A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9258B8D24280B9F003D026E /* PterodactylLib.framework in Frameworks */,
+				C96048D724326F0900641554 /* PterodactylLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +66,7 @@
 		C9258B8B24280B9F003D026E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C96048D624326F0900641554 /* PterodactylLib.framework */,
 				C9258B8C24280B9F003D026E /* PterodactylLib.framework */,
 			);
 			name = Frameworks;

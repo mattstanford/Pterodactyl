@@ -11,6 +11,7 @@
 		C9093FC6240AE25B00B7D1BA /* Pterodactyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FC5240AE25B00B7D1BA /* Pterodactyl.swift */; };
 		C9258B88242808BD003D026E /* PterodactylServer.app in Resources */ = {isa = PBXBuildFile; fileRef = C9258B87242808BD003D026E /* PterodactylServer.app */; };
 		C9258B8A24280B40003D026E /* run_server.sh in Resources */ = {isa = PBXBuildFile; fileRef = C9258B8924280A6F003D026E /* run_server.sh */; };
+		C96048DA24327AD300641554 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96048D924327AD300641554 /* XCTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		C9093FF7241D553800B7D1BA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		C9258B87242808BD003D026E /* PterodactylServer.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = PterodactylServer.app; sourceTree = "<group>"; };
 		C9258B8924280A6F003D026E /* run_server.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = run_server.sh; sourceTree = "<group>"; };
+		C96048D924327AD300641554 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96048DA24327AD300641554 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +42,7 @@
 			children = (
 				C9093FBC240AE17000B7D1BA /* PterodactylLib */,
 				C9093FBB240AE17000B7D1BA /* Products */,
+				C96048D824327AD300641554 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +73,14 @@
 				C9258B87242808BD003D026E /* PterodactylServer.app */,
 			);
 			path = Built_Product;
+			sourceTree = "<group>";
+		};
+		C96048D824327AD300641554 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C96048D924327AD300641554 /* XCTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
