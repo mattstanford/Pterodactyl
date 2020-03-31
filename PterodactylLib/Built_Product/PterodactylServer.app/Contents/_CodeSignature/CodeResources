@@ -4,13 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Resources/AppIcon.icns</key>
+		<data>
+		29n1LxJ1lWfoLyRwTpFzOXNyhMM=
+		</data>
+		<key>Resources/Assets.car</key>
+		<data>
+		n4wTLf2fvVVcPWP9ZiABsdaI0G8=
+		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
 		M1rS+Tcas1ZdM4/iibTlduTJ22M=
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/MainMenu.nib</key>
 		<data>
-		cfY45NRJgGv/wJpDge+95uGyr9w=
+		vC9FXVICVQbc+5ok0MLZ2WkLrV8=
 		</data>
 		<key>Resources/Cartfile</key>
 		<data>
@@ -28,6 +36,20 @@
 			<key>requirement</key>
 			<string>identifier "pl.kolakowski.SwifterMac" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: Matthew Stanford (7TGHRWY59S)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
+		<key>Resources/AppIcon.icns</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WcpHOSdOtZJ4Y2Ch8Azr3giLzmAaNOo8KS/hvJRjSZE=
+			</data>
+		</dict>
+		<key>Resources/Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			leTXdBO3Ng7Om8QnFn1BsI70/6tEH/uWg3Db6AwYXY4=
+			</data>
+		</dict>
 		<key>Resources/Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
@@ -39,7 +61,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			37lKZmptyYiF6PsBkFxsVL/Y7I5fiP0rj9n4ejhW7FI=
+			ruIrRVvvZZgwjeEyF7r2tCk8H6Yr0rAn/1LdRgSyQ3s=
 			</data>
 		</dict>
 		<key>Resources/Cartfile</key>

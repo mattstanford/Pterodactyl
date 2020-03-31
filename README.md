@@ -106,3 +106,7 @@ class MyUITestExample: XCTestCase {
     }
 }
 ```
+
+## Attribution
+
+The PterodactylServer Icon is made by [FreePik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com))
