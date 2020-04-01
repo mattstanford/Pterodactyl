@@ -30,11 +30,7 @@ class PterodactylExampleUITests: XCTestCase {
         sleep(1)
 
         //Trigger a push notification
-       // pterodactyl.triggerSimulatorNotification(withMessage: "here's a simple message")
-        pterodactyl.triggerSimulatorNotification(withMessage: "here's a more complicated message", additionalKeys: ["badge": 42, "myWeirdCustomKey": "foobar"])
-       // pterodactyl.triggerSimulatorNotification(withFullPayload: ["aps": ["alert": "here's a message with the full payload supplied", "badge": 1, "sound": "default"], "someOtherKey": "some other key defined outside the aps payload"])
-        
-
+        pterodactyl.triggerSimulatorNotification(withMessage: "here's a simple message")
         
         //Tap the notification when it appears
         let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")

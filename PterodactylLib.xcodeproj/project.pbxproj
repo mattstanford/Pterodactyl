@@ -25,6 +25,7 @@
 		C96048D924327AD300641554 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C96048DB2432913400641554 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C96048DC24351FB800641554 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../GhostHand/LICENSE; sourceTree = "<group>"; };
+		C96048DD2435205600641554 /* Pterodactyl.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pterodactyl.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +68,7 @@
 				C9093FBE240AE17000B7D1BA /* Info.plist */,
 				C9093FC5240AE25B00B7D1BA /* Pterodactyl.swift */,
 				C9258B8924280A6F003D026E /* run_server.sh */,
+				C96048DD2435205600641554 /* Pterodactyl.podspec */,
 			);
 			path = PterodactylLib;
 			sourceTree = "<group>";
@@ -308,6 +310,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = PterodactylLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +338,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = PterodactylLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
