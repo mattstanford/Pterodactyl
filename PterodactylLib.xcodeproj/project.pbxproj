@@ -24,6 +24,7 @@
 		C9258B8924280A6F003D026E /* run_server.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = run_server.sh; sourceTree = "<group>"; };
 		C96048D924327AD300641554 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C96048DB2432913400641554 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C96048DC24351FB800641554 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../GhostHand/LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				C96048DB2432913400641554 /* README.md */,
+				C96048DC24351FB800641554 /* LICENSE */,
 				C9093FBC240AE17000B7D1BA /* PterodactylLib */,
 				C9093FBB240AE17000B7D1BA /* Products */,
 				C96048D824327AD300641554 /* Frameworks */,
