@@ -14,18 +14,19 @@
 		C9093FEA241D40DE00B7D1BA /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = C9093FE9241D40DE00B7D1BA /* Cartfile */; };
 		C9093FED241D50DF00B7D1BA /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9093FEC241D50DF00B7D1BA /* Swifter.framework */; };
 		C9093FF2241D521A00B7D1BA /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FF1241D521A00B7D1BA /* ServerManager.swift */; };
-		C9258B7E242807E7003D026E /* PterodactylServer.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = C9093FD0241D3A5F00B7D1BA /* PterodactylServer.app */; };
+		C9258B7E242807E7003D026E /* PterodactylServer.app in Copy Files */ = {isa = PBXBuildFile; fileRef = C9093FD0241D3A5F00B7D1BA /* PterodactylServer.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C9258B7D242807BF003D026E /* CopyFiles */ = {
+		C9258B7D242807BF003D026E /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = "${SOURCE_ROOT}/../PterodactylLib/Built_Product";
 			dstSubfolderSpec = 0;
 			files = (
-				C9258B7E242807E7003D026E /* PterodactylServer.app in CopyFiles */,
+				C9258B7E242807E7003D026E /* PterodactylServer.app in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -108,7 +109,7 @@
 				C9093FCD241D3A5F00B7D1BA /* Frameworks */,
 				C9093FCE241D3A5F00B7D1BA /* Resources */,
 				C9093FF0241D50F700B7D1BA /* Carthage Copy Frameworks */,
-				C9258B7D242807BF003D026E /* CopyFiles */,
+				C9258B7D242807BF003D026E /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -331,6 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PterodactylServer/PterodactylServer.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 735H4JCR7N;
@@ -346,6 +348,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattstanford.PterodactylServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -355,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PterodactylServer/PterodactylServer.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 735H4JCR7N;
@@ -370,6 +374,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattstanford.PterodactylServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

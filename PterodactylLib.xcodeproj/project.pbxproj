@@ -11,21 +11,20 @@
 		C9093FC6240AE25B00B7D1BA /* Pterodactyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FC5240AE25B00B7D1BA /* Pterodactyl.swift */; };
 		C9258B88242808BD003D026E /* PterodactylServer.app in Resources */ = {isa = PBXBuildFile; fileRef = C9258B87242808BD003D026E /* PterodactylServer.app */; };
 		C9258B8A24280B40003D026E /* run_server.sh in Resources */ = {isa = PBXBuildFile; fileRef = C9258B8924280A6F003D026E /* run_server.sh */; };
-		C96048DA24327AD300641554 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96048D924327AD300641554 /* XCTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9093FBA240AE17000B7D1BA /* PterodactylLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PterodactylLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9093FBD240AE17000B7D1BA /* PterodactylLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PterodactylLib.h; sourceTree = "<group>"; };
+		C9093FBD240AE17000B7D1BA /* PterodactylLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PterodactylLib.h; path = Classes/PterodactylLib.h; sourceTree = "<group>"; };
 		C9093FBE240AE17000B7D1BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9093FC5240AE25B00B7D1BA /* Pterodactyl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pterodactyl.swift; sourceTree = "<group>"; };
+		C9093FC5240AE25B00B7D1BA /* Pterodactyl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Pterodactyl.swift; path = Classes/Pterodactyl.swift; sourceTree = "<group>"; };
 		C9093FF7241D553800B7D1BA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		C9258B87242808BD003D026E /* PterodactylServer.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = PterodactylServer.app; sourceTree = "<group>"; };
 		C9258B8924280A6F003D026E /* run_server.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = run_server.sh; sourceTree = "<group>"; };
 		C96048D924327AD300641554 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C96048DB2432913400641554 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C96048DC24351FB800641554 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../GhostHand/LICENSE; sourceTree = "<group>"; };
-		C96048DD2435205600641554 /* Pterodactyl.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pterodactyl.podspec; sourceTree = SOURCE_ROOT; };
+		C96048DD2435205600641554 /* PterodactylLib.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = PterodactylLib.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +32,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C96048DA24327AD300641554 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +66,7 @@
 				C9093FBE240AE17000B7D1BA /* Info.plist */,
 				C9093FC5240AE25B00B7D1BA /* Pterodactyl.swift */,
 				C9258B8924280A6F003D026E /* run_server.sh */,
-				C96048DD2435205600641554 /* Pterodactyl.podspec */,
+				C96048DD2435205600641554 /* PterodactylLib.podspec */,
 			);
 			path = PterodactylLib;
 			sourceTree = "<group>";
@@ -302,6 +300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 735H4JCR7N;
@@ -316,6 +315,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/usr/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattstanford.PterodactylLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -330,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 735H4JCR7N;
@@ -344,6 +345,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/usr/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattstanford.PterodactylLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

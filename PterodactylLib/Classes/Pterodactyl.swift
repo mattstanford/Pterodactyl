@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import XCTest
 
 public class Pterodactyl {
     
@@ -19,11 +18,6 @@ public class Pterodactyl {
     
     public init(targetAppBundleId: String) {
         self.targetAppBundleId = targetAppBundleId
-    }
-    
-    public init(targetApp: XCUIApplication) {
-        let bundleId = targetApp.value(forKey: "bundleID") as! String
-        self.targetAppBundleId = bundleId
     }
     
     public func triggerSimulatorNotification(withMessage message: String, additionalKeys: [String: Any]? = nil) {

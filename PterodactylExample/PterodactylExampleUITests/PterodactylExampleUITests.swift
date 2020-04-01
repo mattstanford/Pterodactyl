@@ -22,7 +22,7 @@ class PterodactylExampleUITests: XCTestCase {
     
     func testSimulatorPush() {
         
-        let pterodactyl = Pterodactyl(targetApp: app)
+        let pterodactyl = Pterodactyl(targetAppBundleId: "com.mattstanford.PterodactylExample")
         waitForElementToAppear(object: app.staticTexts["Pterodactyl Example"])
         
         //Tap the home button

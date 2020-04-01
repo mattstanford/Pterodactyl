@@ -7,9 +7,10 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'Pterodactyl'
+  s.name             = 'PterodactylLib'
   s.version          = '1.0'
   s.summary          = 'XCUITest helper for testing push notifications'
+  s.swift_version    = '5.0'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -29,8 +30,8 @@ XCUITest helper for testing custom schemes & universal links. This app will inst
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'PterodactylLib/**/*'
-  s.resources = 'PterodactylLib/run_server.sh'
+  s.source_files = 'PterodactylLib/Classes/**/*'
+  s.resources = 'PterodactylLib/run_server.sh', 'PterodactylLib/Built_Product/*'
   
   # s.resource_bundles = {
   #   'TestCocoaPod' => ['TestCocoaPod/Assets/*.png']

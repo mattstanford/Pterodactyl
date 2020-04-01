@@ -23,20 +23,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C9093FCF241D3A5F00B7D1BA"
-               BuildableName = "PterodactylServer.app"
-               BlueprintName = "PterodactylServer"
-               ReferencedContainer = "container:PterodactylServer/PterodactylServer.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "C9093FB9240AE17000B7D1BA"
                BuildableName = "PterodactylLib.framework"
                BlueprintName = "PterodactylLib"
