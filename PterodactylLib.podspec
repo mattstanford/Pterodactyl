@@ -31,7 +31,7 @@ XCUITest helper for testing custom schemes & universal links. This app will inst
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'PterodactylLib/Classes/**/*'
-  s.resources = 'PterodactylLib/run_server.sh', 'PterodactylLib/Built_Product/*'
+  s.resources = 'run_server.sh', 'PterodactylLib/Built_Product/*'
   
   # s.resource_bundles = {
   #   'TestCocoaPod' => ['TestCocoaPod/Assets/*.png']

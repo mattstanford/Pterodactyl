@@ -20,7 +20,7 @@
 		C9093FC5240AE25B00B7D1BA /* Pterodactyl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Pterodactyl.swift; path = Classes/Pterodactyl.swift; sourceTree = "<group>"; };
 		C9093FF7241D553800B7D1BA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		C9258B87242808BD003D026E /* PterodactylServer.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = PterodactylServer.app; sourceTree = "<group>"; };
-		C9258B8924280A6F003D026E /* run_server.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = run_server.sh; sourceTree = "<group>"; };
+		C9258B8924280A6F003D026E /* run_server.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = run_server.sh; path = ../run_server.sh; sourceTree = "<group>"; };
 		C96048D924327AD300641554 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C96048DB2432913400641554 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C96048DC24351FB800641554 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../GhostHand/LICENSE; sourceTree = "<group>"; };
