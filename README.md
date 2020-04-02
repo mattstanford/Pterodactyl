@@ -12,7 +12,56 @@ Xcode 11.4 added the ability to send push notifications to your simulator. There
 1. Create an APNS payload JSON file, and manually drag it into the running simulator
 2. Create an APNS payload JSON file, and run a command from the terminal supplying your JSON file as an argument.
 
-Apple unfortunately did not leave us an API to use this new functionality within XCUITest. Pterodactyl works around this limitation by starting up a local macOS server on your computer and runs the applicable `xcrun` command when it receives an appropriate network request. The library you add to your app streamlines all messy stuff like creating an appropriate JSON file and sending the right network request to the local server.
+Apple unfortunately did not leave us an API to use this new functionality within XCUITest. Pterodactyl works around this limitation by starting up a local macOS server on your computer. This server listens for a specific HTTP request, and when it gets it, runs the applicable `xcrun` command. The library you add to your app streamlines all messy stuff like creating an appropriate JSON file and sending the right network request to the local server.
+
+## Installation
+
+Currently Pterodactyl supports CocoaPods and Carthage
+
+### Cocoapods
+
+First add the PterodactylLib pod to your project's **UI Test Target** in your `Podfile`:
+
+```
+target 'MyProjectUITests' do
+    # Other UI Test pods....
+    pod 'PterodactylLib'
+end
+```
+
+Then go to your **UI Test Target** in Xcode, click `Build Phases`, and add a new run script with the following code:
+
+```
+"${PODS_ROOT}/PterodactylLib/run_server.sh"
+```
+
+### Carthage
+
+Add the Pterodactyl library to your Cartfile:
+
+```
+github "mattstanford/PterodactylLib"
+```
+
+After you've linked the library properly to your **UI Test Target**, click on the project in Xcode, select the UI Test Target, click `Build Phases`, and add a new run script with the following code:
+
+```
+"${PROJECT_DIR}/Carthage/Build/iOS/PterodactylLib.framework/run_server.sh"
+```
+
+## Stop the server when UI Tests are done
+
+The `run_server.sh` script will start up a mac app called `PterodactylServer`. You may want this server to stop running once your tests are done. To do this, you can add a "post-action" in your current scheme to stop the server. To do this, do the following:
+
+1. Click on your scheme in Xcode and click "Edit Scheme..."
+2. Go to the "Test" action on the right sidebar and click the little arrow next to it to expand the list of actions.
+3. Click "post-action" and add a new run script
+4. Enter the following in the shell script:
+```
+killAll PterodactylServer
+```
+
+![Example of adding a post-action](post_action.png?raw=true)
 
 ## Usage
 
