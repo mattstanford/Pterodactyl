@@ -40,7 +40,7 @@ Then go to your **UI Test Target** in Xcode, click `Build Phases`, and add a new
 Add the Pterodactyl library to your Cartfile:
 
 ```
-github "mattstanford/PterodactylLib"
+github "mattstanford/Pterodactyl"
 ```
 
 After you've linked the library properly to your **UI Test Target**, click on the project in Xcode, select the UI Test Target, click `Build Phases`, and add a new run script with the following code:
