@@ -3,16 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03825D53252C8100007DA74B /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = 03825D52252C8100007DA74B /* Swifter */; };
 		C9093FD4241D3A5F00B7D1BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FD3241D3A5F00B7D1BA /* AppDelegate.swift */; };
 		C9093FD6241D3A5F00B7D1BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FD5241D3A5F00B7D1BA /* ViewController.swift */; };
 		C9093FD8241D3A6100B7D1BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9093FD7241D3A6100B7D1BA /* Assets.xcassets */; };
 		C9093FDB241D3A6100B7D1BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9093FD9241D3A6100B7D1BA /* Main.storyboard */; };
-		C9093FEA241D40DE00B7D1BA /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = C9093FE9241D40DE00B7D1BA /* Cartfile */; };
-		C9093FED241D50DF00B7D1BA /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9093FEC241D50DF00B7D1BA /* Swifter.framework */; };
 		C9093FF2241D521A00B7D1BA /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FF1241D521A00B7D1BA /* ServerManager.swift */; };
 		C9258B7E242807E7003D026E /* PterodactylServer.app in Copy Files */ = {isa = PBXBuildFile; fileRef = C9093FD0241D3A5F00B7D1BA /* PterodactylServer.app */; };
 /* End PBXBuildFile section */
@@ -39,8 +38,6 @@
 		C9093FDA241D3A6100B7D1BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9093FDC241D3A6100B7D1BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9093FDD241D3A6100B7D1BA /* PterodactylServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PterodactylServer.entitlements; sourceTree = "<group>"; };
-		C9093FE9241D40DE00B7D1BA /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
-		C9093FEC241D50DF00B7D1BA /* Swifter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swifter.framework; path = Carthage/Build/Mac/Swifter.framework; sourceTree = "<group>"; };
 		C9093FF1241D521A00B7D1BA /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		C9093FF6241D552A00B7D1BA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -50,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9093FED241D50DF00B7D1BA /* Swifter.framework in Frameworks */,
+				03825D53252C8100007DA74B /* Swifter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +59,6 @@
 			children = (
 				C9093FD2241D3A5F00B7D1BA /* PterodactylServer */,
 				C9093FD1241D3A5F00B7D1BA /* Products */,
-				C9093FEB241D50DE00B7D1BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,7 +75,6 @@
 			children = (
 				C9093FF6241D552A00B7D1BA /* .gitignore */,
 				C9093FD3241D3A5F00B7D1BA /* AppDelegate.swift */,
-				C9093FE9241D40DE00B7D1BA /* Cartfile */,
 				C9093FD5241D3A5F00B7D1BA /* ViewController.swift */,
 				C9093FD7241D3A6100B7D1BA /* Assets.xcassets */,
 				C9093FD9241D3A6100B7D1BA /* Main.storyboard */,
@@ -88,14 +83,6 @@
 				C9093FF1241D521A00B7D1BA /* ServerManager.swift */,
 			);
 			path = PterodactylServer;
-			sourceTree = "<group>";
-		};
-		C9093FEB241D50DE00B7D1BA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C9093FEC241D50DF00B7D1BA /* Swifter.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,7 +95,6 @@
 				C9093FCC241D3A5F00B7D1BA /* Sources */,
 				C9093FCD241D3A5F00B7D1BA /* Frameworks */,
 				C9093FCE241D3A5F00B7D1BA /* Resources */,
-				C9093FF0241D50F700B7D1BA /* Carthage Copy Frameworks */,
 				C9258B7D242807BF003D026E /* Copy Files */,
 			);
 			buildRules = (
@@ -116,6 +102,9 @@
 			dependencies = (
 			);
 			name = PterodactylServer;
+			packageProductDependencies = (
+				03825D52252C8100007DA74B /* Swifter */,
+			);
 			productName = PterodactylServer;
 			productReference = C9093FD0241D3A5F00B7D1BA /* PterodactylServer.app */;
 			productType = "com.apple.product-type.application";
@@ -144,6 +133,9 @@
 				Base,
 			);
 			mainGroup = C9093FC7241D3A5F00B7D1BA;
+			packageReferences = (
+				03825D51252C8100007DA74B /* XCRemoteSwiftPackageReference "swifter" */,
+			);
 			productRefGroup = C9093FD1241D3A5F00B7D1BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -158,36 +150,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9093FEA241D40DE00B7D1BA /* Cartfile in Resources */,
 				C9093FD8241D3A6100B7D1BA /* Assets.xcassets in Resources */,
 				C9093FDB241D3A6100B7D1BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		C9093FF0241D50F700B7D1BA /* Carthage Copy Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/Swifter.framework",
-			);
-			name = "Carthage Copy Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Swifter.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9093FCC241D3A5F00B7D1BA /* Sources */ = {
@@ -401,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		03825D51252C8100007DA74B /* XCRemoteSwiftPackageReference "swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/httpswift/swifter";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		03825D52252C8100007DA74B /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03825D51252C8100007DA74B /* XCRemoteSwiftPackageReference "swifter" */;
+			productName = Swifter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9093FC8241D3A5F00B7D1BA /* Project object */;
 }
