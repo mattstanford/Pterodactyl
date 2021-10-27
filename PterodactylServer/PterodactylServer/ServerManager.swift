@@ -15,14 +15,28 @@ class ServerManager {
     
     private let server = HttpServer()
     let pushEndpoint = "/simulatorPush"
+    let defaultPort: in_port_t = 8081
     
-    func startServer() {
+    func startServer(options: [StartupOption: String]) {
         do {
-            try server.start(8081)
+            let port: in_port_t
+            if let portString = options[.port],
+               let passedInPort = in_port_t(portString) {
+                port = passedInPort
+            } else {
+                port = defaultPort
+            }
+        
+            print("Starting server on port: " + port.description)
+            try server.start(port)
             setupPushEndpoint()
         } catch {
             print("Error starting mock server" + error.localizedDescription)
         }
+    }
+    
+    func stopServer() {
+        server.stop()
     }
     
     private func setupPushEndpoint() {
@@ -71,7 +85,7 @@ class ServerManager {
         return temporaryFileURL
     }
     
-    func run(command: String) {
+    private func run(command: String) {
         let pipe = Pipe()
         let task = Process()
         task.launchPath = "/bin/sh"

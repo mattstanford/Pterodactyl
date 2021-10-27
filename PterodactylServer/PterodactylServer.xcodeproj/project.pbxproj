@@ -15,6 +15,7 @@
 		C9093FED241D50DF00B7D1BA /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9093FEC241D50DF00B7D1BA /* Swifter.framework */; };
 		C9093FF2241D521A00B7D1BA /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FF1241D521A00B7D1BA /* ServerManager.swift */; };
 		C9258B7E242807E7003D026E /* PterodactylServer.app in Copy Files */ = {isa = PBXBuildFile; fileRef = C9093FD0241D3A5F00B7D1BA /* PterodactylServer.app */; };
+		C9824A0F2729DE080025F241 /* StartupOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9824A0E2729DE080025F241 /* StartupOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		C9093FEC241D50DF00B7D1BA /* Swifter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swifter.framework; path = Carthage/Build/Mac/Swifter.framework; sourceTree = "<group>"; };
 		C9093FF1241D521A00B7D1BA /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		C9093FF6241D552A00B7D1BA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		C9824A0E2729DE080025F241 /* StartupOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupOption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		C9093FD2241D3A5F00B7D1BA /* PterodactylServer */ = {
 			isa = PBXGroup;
 			children = (
+				C9824A0D2729DC3F0025F241 /* StartupOption */,
 				C9093FF6241D552A00B7D1BA /* .gitignore */,
 				C9093FD3241D3A5F00B7D1BA /* AppDelegate.swift */,
 				C9093FE9241D40DE00B7D1BA /* Cartfile */,
@@ -86,6 +89,7 @@
 				C9093FDC241D3A6100B7D1BA /* Info.plist */,
 				C9093FDD241D3A6100B7D1BA /* PterodactylServer.entitlements */,
 				C9093FF1241D521A00B7D1BA /* ServerManager.swift */,
+				C9824A0E2729DE080025F241 /* StartupOption.swift */,
 			);
 			path = PterodactylServer;
 			sourceTree = "<group>";
@@ -96,6 +100,13 @@
 				C9093FEC241D50DF00B7D1BA /* Swifter.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9824A0D2729DC3F0025F241 /* StartupOption */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StartupOption;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +207,7 @@
 			files = (
 				C9093FD6241D3A5F00B7D1BA /* ViewController.swift in Sources */,
 				C9093FF2241D521A00B7D1BA /* ServerManager.swift in Sources */,
+				C9824A0F2729DE080025F241 /* StartupOption.swift in Sources */,
 				C9093FD4241D3A5F00B7D1BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

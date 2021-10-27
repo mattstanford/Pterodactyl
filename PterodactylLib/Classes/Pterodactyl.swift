@@ -11,13 +11,17 @@ import Foundation
 public class Pterodactyl {
     
     let targetAppBundleId: String
-    var serverHost: String = "localhost"
-    var serverPort: in_port_t = 8081
+    let host: String
+    let port: in_port_t
     
-    let pushEndpoint = "simulatorPush"
+    private let defaultHost = "localhost"
+    private let defaultPort: in_port_t = 8081
+    private let pushEndpoint = "simulatorPush"
     
-    public init(targetAppBundleId: String) {
+    public init(targetAppBundleId: String, host: String? = nil, port: in_port_t? = nil) {
         self.targetAppBundleId = targetAppBundleId
+        self.host = host ?? defaultHost
+        self.port = port ?? defaultPort
     }
     
     public func triggerSimulatorNotification(withMessage message: String, additionalKeys: [String: Any]? = nil) {
@@ -31,7 +35,7 @@ public class Pterodactyl {
     }
     
     public func triggerSimulatorNotification(withFullPayload payload: [String: Any]) {
-        let endpoint = "http://localhost:8081/simulatorPush"
+        let endpoint = "http://\(host):\(port)/simulatorPush"
         
         guard let endpointUrl = URL(string: endpoint) else {
             return

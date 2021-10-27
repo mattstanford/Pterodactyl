@@ -14,7 +14,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let serverManager = ServerManager()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        serverManager.startServer()
+        
+        let options = StartupOption.getDictionary(from: CommandLine.arguments)
+        serverManager.startServer(options: options)
+    }
+    
+    func applicationWillTerminate(_ notification: Notification) {
+        serverManager.stopServer()
     }
 }
 

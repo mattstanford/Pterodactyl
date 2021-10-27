@@ -9,7 +9,7 @@
 scriptLocation=`dirName $0`
 appLocation=`find $scriptLocation -name "PterodactylServer.app" | head -n 1`
 
-open -a $appLocation
+open -a $appLocation --args $@
 
 exit 0
 
