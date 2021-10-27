@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		tDrVATDw8DxgarCQcj5RETQVjFs=
+		r6uYyglTmdm5tT0MPxHY8tKDCLA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -15,11 +15,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WUoEpLAuXZD49PBuAUp0Oo7ruaQ=
+			kfoD+lI4tHLP4jyjfY4vzd1kQnQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			j/2xLY+43d7RMZoSMEtQT0zaSpRU2K6MToZzt+xf1yk=
+			WJafocgR7/FUYyiiFhBX8yrlgEXOLHQRtdm2WB4RicA=
 			</data>
 		</dict>
 		<key>Headers/SwifterMac.h</key>
@@ -33,48 +33,92 @@
 			8waKmmJmtJXVpgOs2Jf9iIMY64fPEwDDMc4jbwSf9eo=
 			</data>
 		</dict>
+		<key>Modules/Swifter.swiftmodule/arm64-apple-macos.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Gy82n/QXBa8pRabu4F7n23UZPYg=
+			</data>
+			<key>hash2</key>
+			<data>
+			zhhpy/FSHA/GxHsgW+QzP4S+BFBdAzoT6Y61v8ZB4lQ=
+			</data>
+		</dict>
+		<key>Modules/Swifter.swiftmodule/arm64-apple-macos.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9Vr1T2mtdm4/6NhPxj2WCuJ/U/Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			B5krLR4ncCVVLeYQTXyqqiMtaxfWxWjprPuCwwn4sMU=
+			</data>
+		</dict>
+		<key>Modules/Swifter.swiftmodule/arm64.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Gy82n/QXBa8pRabu4F7n23UZPYg=
+			</data>
+			<key>hash2</key>
+			<data>
+			zhhpy/FSHA/GxHsgW+QzP4S+BFBdAzoT6Y61v8ZB4lQ=
+			</data>
+		</dict>
+		<key>Modules/Swifter.swiftmodule/arm64.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9Vr1T2mtdm4/6NhPxj2WCuJ/U/Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			B5krLR4ncCVVLeYQTXyqqiMtaxfWxWjprPuCwwn4sMU=
+			</data>
+		</dict>
 		<key>Modules/Swifter.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J4uTWsiQnr9jIJFYT9k4Chu5TJ0=
+			QbJS9uAlFHxccqYPnUvDNpZA1h0=
 			</data>
 			<key>hash2</key>
 			<data>
-			TSGQDd5LKMF3cLP+dipV6bAysBMDWb59CLWClFqXhTg=
+			tQE9cEL/8dTjIsINcbZhzLWMRWTdcgoTSeIT/TKpoqM=
 			</data>
 		</dict>
 		<key>Modules/Swifter.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0XMrIEuYRZKhqwQBPdt4omFIF4Q=
+			Jb54bHa1d7syBmCdWpAM8xAHp/c=
 			</data>
 			<key>hash2</key>
 			<data>
-			XznDBgEWmGQtjEbIs0H86tvbrfJI8CJ8pe+3ioZ1SwQ=
+			1/JIZI1UoetZuhoZL6A42slKcZQ8OPOmK+Rrta06SYU=
 			</data>
 		</dict>
 		<key>Modules/Swifter.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J4uTWsiQnr9jIJFYT9k4Chu5TJ0=
+			QbJS9uAlFHxccqYPnUvDNpZA1h0=
 			</data>
 			<key>hash2</key>
 			<data>
-			TSGQDd5LKMF3cLP+dipV6bAysBMDWb59CLWClFqXhTg=
+			tQE9cEL/8dTjIsINcbZhzLWMRWTdcgoTSeIT/TKpoqM=
 			</data>
 		</dict>
 		<key>Modules/Swifter.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0XMrIEuYRZKhqwQBPdt4omFIF4Q=
+			Jb54bHa1d7syBmCdWpAM8xAHp/c=
 			</data>
 			<key>hash2</key>
 			<data>
-			XznDBgEWmGQtjEbIs0H86tvbrfJI8CJ8pe+3ioZ1SwQ=
+			1/JIZI1UoetZuhoZL6A42slKcZQ8OPOmK+Rrta06SYU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -92,11 +136,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tDrVATDw8DxgarCQcj5RETQVjFs=
+			r6uYyglTmdm5tT0MPxHY8tKDCLA=
 			</data>
 			<key>hash2</key>
 			<data>
-			U/zs99D4ZteVnzJX4XetDV+DFFFokqAPlnLiote/NN0=
+			BMjkKlFIZSyVr8NKY6ZwFg8lSqncxq2REV3HKBa4v1I=
 			</data>
 		</dict>
 	</dict>

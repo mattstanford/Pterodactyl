@@ -19,6 +19,7 @@
 		C9093FBE240AE17000B7D1BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9093FC5240AE25B00B7D1BA /* Pterodactyl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Pterodactyl.swift; path = Classes/Pterodactyl.swift; sourceTree = "<group>"; };
 		C9093FF7241D553800B7D1BA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		C92243602729CE3600EC2ADF /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		C9258B87242808BD003D026E /* PterodactylServer.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = PterodactylServer.app; sourceTree = "<group>"; };
 		C9258B8924280A6F003D026E /* run_server.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = run_server.sh; path = ../run_server.sh; sourceTree = "<group>"; };
 		C96048D924327AD300641554 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -41,6 +42,7 @@
 		C9093FB0240AE17000B7D1BA = {
 			isa = PBXGroup;
 			children = (
+				C92243602729CE3600EC2ADF /* Package.swift */,
 				C96048DB2432913400641554 /* README.md */,
 				C96048DC24351FB800641554 /* LICENSE */,
 				C9093FBC240AE17000B7D1BA /* PterodactylLib */,

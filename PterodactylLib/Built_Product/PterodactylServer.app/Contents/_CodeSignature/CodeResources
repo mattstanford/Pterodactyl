@@ -10,7 +10,7 @@
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		n4wTLf2fvVVcPWP9ZiABsdaI0G8=
+		ax0YG5SXK6XAT7Y/qqcIhs+O8kk=
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/MainMenu.nib</key>
 		<data>
-		9G5KqItAkzEacBzhjP5IelWfqH8=
+		c8v0a1Ydo6saT2BbgYqEBglTkig=
 		</data>
 		<key>Resources/Cartfile</key>
 		<data>
@@ -31,7 +31,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			IvDzZ5dMGj2U+0Qgb+M02ErqE/A=
+			rnS56Bh3WYE/Sj1xHkMtbqzvR3A=
 			</data>
 			<key>requirement</key>
 			<string>identifier "pl.kolakowski.SwifterMac" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: Matthew Stanford (7TGHRWY59S)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			leTXdBO3Ng7Om8QnFn1BsI70/6tEH/uWg3Db6AwYXY4=
+			6QvGhvOVNs3p0kEk0/IQkvX98zKh5W9CtEEPZrFsE4o=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/Main.storyboardc/Info.plist</key>
@@ -61,7 +61,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ob6tBtHPFUWNum/7c4/aiASvNqtD/FYKXHVUpInXDds=
+			QWXVEm8WJ8R9z/5bqcv8yUCKFtt/GJEIntJfJiLlE1Y=
 			</data>
 		</dict>
 		<key>Resources/Cartfile</key>
