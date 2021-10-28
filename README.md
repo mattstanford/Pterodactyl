@@ -49,6 +49,14 @@ After you've linked the library properly to your **UI Test Target**, click on th
 "${PROJECT_DIR}/Carthage/Build/iOS/PterodactylLib.framework/run_server.sh"
 ```
 
+### Swift Package Manager
+
+Add Pterodactyl library to your project, and make sure to add to your **UI Test Target**. Then in your UI Test Target, click `Build Phases`, and add a new run script with the following code:
+
+```
+"${BUILD_DIR%Build/*}/SourcePackages/checkouts/Pterodactyl/run_server.sh"
+```
+
 ## Stop the server when UI Tests are done
 
 The `run_server.sh` script will start up a mac app called `PterodactylServer`. You may want this server to stop running once your tests are done. To do this, you can add a "post-action" in your current scheme to stop the server. To do this, do the following:
@@ -62,6 +70,21 @@ killAll PterodactylServer
 ```
 
 ![Example of adding a post-action](post_action.png?raw=true)
+
+## Specifying a Port for Pterodactyl Server
+
+When Pterodacyl Server starts, it will by default start on port 8081. If for some reason this doesn't work for you, you can specify a different port by supplying it in the run script by supplying a `-port <port number>` option. For example, if you are using Swift Package Manager and want to run the server on port 8191, your run script would look like this:
+
+```
+"${BUILD_DIR%Build/*}/SourcePackages/checkouts/Pterodactyl/run_server.sh" -port 8191
+```
+
+Then, in the code for your UI tests, make sure to specify the port when initializing the Pterodactyl instance:
+
+```
+let pterodactyl = Pterodactyl(targetAppBundleId: targetAppBundleId, port: 8191)
+
+```
 
 ## Usage
 
@@ -129,7 +152,7 @@ class MyUITestExample: XCTestCase {
     func testSimulatorPush() {
         var app = XCUIApplication()
         
-        let pterodactyl = Pterodactyl(targetApp: app)
+        let pterodactyl = Pterodactyl(targetAppBundleId: "com.mattstanford.PterodactylExample")
         waitForElementToAppear(object: app.staticTexts["Pterodactyl Example"])
         
         //Tap the home button
