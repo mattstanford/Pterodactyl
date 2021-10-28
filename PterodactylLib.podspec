@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PterodactylLib'
-  s.version          = '1.1.1'
+  s.version          = '1.2.0'
   s.summary          = 'XCUITest helper for testing push notifications'
   s.swift_version    = '5.0'
 
