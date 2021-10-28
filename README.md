@@ -83,16 +83,15 @@ Then, in the code for your UI tests, make sure to specify the port when initiali
 
 ```
 let pterodactyl = Pterodactyl(targetAppBundleId: targetAppBundleId, port: 8191)
-
 ```
 
 ## Usage
 
-First intialize a `Pterodactyl` instance with an instance of your XCUIApplication:
+First intialize a `Pterodactyl` instance with the name of the app you are testing:
 
 ```
 let app = XCUIApplication()
-let pterodactyl = Pterodactyl(targetApp: app)
+let pterodactyl = Pterodactyl(targetAppBundleId: "com.mattstanford.PterodactylExample")
 ```
 
 You can send a push notification to your app with a custom message like so:
