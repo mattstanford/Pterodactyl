@@ -14,14 +14,12 @@ public class Pterodactyl {
     let host: String
     let port: in_port_t
     
-    private let defaultHost = "localhost"
-    private let defaultPort: in_port_t = 8081
     private let pushEndpoint = "simulatorPush"
     
-    public init(targetAppBundleId: String, host: String? = nil, port: in_port_t? = nil) {
+    public init(targetAppBundleId: String, host: String = "localhost", port: in_port_t = 8081) {
         self.targetAppBundleId = targetAppBundleId
-        self.host = host ?? defaultHost
-        self.port = port ?? defaultPort
+        self.host = host
+        self.port = port
     }
     
     public func triggerSimulatorNotification(withMessage message: String, additionalKeys: [String: Any]? = nil) {
