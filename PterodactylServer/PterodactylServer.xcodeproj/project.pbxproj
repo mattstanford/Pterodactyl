@@ -3,34 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F7936D52BF3C7CA0065A76E /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = 1F7936D42BF3C7CA0065A76E /* Swifter */; };
 		C9093FD4241D3A5F00B7D1BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FD3241D3A5F00B7D1BA /* AppDelegate.swift */; };
 		C9093FD6241D3A5F00B7D1BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FD5241D3A5F00B7D1BA /* ViewController.swift */; };
 		C9093FD8241D3A6100B7D1BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9093FD7241D3A6100B7D1BA /* Assets.xcassets */; };
 		C9093FDB241D3A6100B7D1BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9093FD9241D3A6100B7D1BA /* Main.storyboard */; };
-		C9093FEA241D40DE00B7D1BA /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = C9093FE9241D40DE00B7D1BA /* Cartfile */; };
-		C9093FED241D50DF00B7D1BA /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9093FEC241D50DF00B7D1BA /* Swifter.framework */; };
 		C9093FF2241D521A00B7D1BA /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FF1241D521A00B7D1BA /* ServerManager.swift */; };
-		C9258B7E242807E7003D026E /* PterodactylServer.app in Copy Files */ = {isa = PBXBuildFile; fileRef = C9093FD0241D3A5F00B7D1BA /* PterodactylServer.app */; };
 		C9824A0F2729DE080025F241 /* StartupOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9824A0E2729DE080025F241 /* StartupOption.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C9258B7D242807BF003D026E /* Copy Files */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "${SOURCE_ROOT}/../PterodactylLib/Built_Product";
-			dstSubfolderSpec = 0;
-			files = (
-				C9258B7E242807E7003D026E /* PterodactylServer.app in Copy Files */,
-			);
-			name = "Copy Files";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C9093FD0241D3A5F00B7D1BA /* PterodactylServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PterodactylServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9093FED241D50DF00B7D1BA /* Swifter.framework in Frameworks */,
+				1F7936D52BF3C7CA0065A76E /* Swifter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,14 +103,15 @@
 				C9093FCC241D3A5F00B7D1BA /* Sources */,
 				C9093FCD241D3A5F00B7D1BA /* Frameworks */,
 				C9093FCE241D3A5F00B7D1BA /* Resources */,
-				C9093FF0241D50F700B7D1BA /* Carthage Copy Frameworks */,
-				C9258B7D242807BF003D026E /* Copy Files */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = PterodactylServer;
+			packageProductDependencies = (
+				1F7936D42BF3C7CA0065A76E /* Swifter */,
+			);
 			productName = PterodactylServer;
 			productReference = C9093FD0241D3A5F00B7D1BA /* PterodactylServer.app */;
 			productType = "com.apple.product-type.application";
@@ -137,8 +122,9 @@
 		C9093FC8241D3A5F00B7D1BA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1540;
 				ORGANIZATIONNAME = "Matt Stanford";
 				TargetAttributes = {
 					C9093FCF241D3A5F00B7D1BA = {
@@ -155,6 +141,9 @@
 				Base,
 			);
 			mainGroup = C9093FC7241D3A5F00B7D1BA;
+			packageReferences = (
+				1F7936D32BF3C7CA0065A76E /* XCRemoteSwiftPackageReference "swifter" */,
+			);
 			productRefGroup = C9093FD1241D3A5F00B7D1BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -169,36 +158,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9093FEA241D40DE00B7D1BA /* Cartfile in Resources */,
 				C9093FD8241D3A6100B7D1BA /* Assets.xcassets in Resources */,
 				C9093FDB241D3A6100B7D1BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		C9093FF0241D50F700B7D1BA /* Carthage Copy Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/Swifter.framework",
-			);
-			name = "Carthage Copy Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Swifter.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9093FCC241D3A5F00B7D1BA /* Sources */ = {
@@ -252,6 +217,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -259,9 +225,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -312,6 +280,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -319,9 +288,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -345,14 +316,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PterodactylServer/PterodactylServer.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 735H4JCR7N;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
 				INFOPLIST_FILE = PterodactylServer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -372,14 +341,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PterodactylServer/PterodactylServer.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 735H4JCR7N;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
 				INFOPLIST_FILE = PterodactylServer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -415,6 +382,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F7936D32BF3C7CA0065A76E /* XCRemoteSwiftPackageReference "swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/httpswift/swifter.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F7936D42BF3C7CA0065A76E /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F7936D32BF3C7CA0065A76E /* XCRemoteSwiftPackageReference "swifter" */;
+			productName = Swifter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9093FC8241D3A5F00B7D1BA /* Project object */;
 }

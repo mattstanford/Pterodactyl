@@ -21,8 +21,23 @@ class PterodactylExampleUITests: XCTestCase {
     }
     
     func testSimulatorPush() {
-        
+        let notificationRequest = "“PterodactylExample” Would Like to Send You Notifications"
+
         let pterodactyl = Pterodactyl(targetAppBundleId: "com.mattstanford.PterodactylExample")
+        let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")
+
+        let existsPredicate = NSPredicate { _, _ in
+            springboard.staticTexts[notificationRequest].exists
+        }
+
+        let allowNotifications = XCTNSPredicateExpectation(predicate: existsPredicate, object: nil)
+        let waiter = XCTWaiter()
+        let wait = waiter.wait(for: [allowNotifications], timeout: 2)
+        if wait != .timedOut {
+            let allowButton = springboard.buttons["Allow"]
+            allowButton.tap()
+        }
+
         waitForElementToAppear(object: app.staticTexts["Pterodactyl Example"])
         
         //Tap the home button
@@ -33,8 +48,7 @@ class PterodactylExampleUITests: XCTestCase {
         pterodactyl.triggerSimulatorNotification(withMessage: "here's a simple message")
         
         //Tap the notification when it appears
-        let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")
-        let springBoardNotification = springboard.otherElements["NotificationShortLookView"]
+        let springBoardNotification = springboard.otherElements.descendants(matching: .any)["NotificationShortLookView"]
         waitForElementToAppear(object: springBoardNotification)
         springBoardNotification.tap()
 
@@ -44,6 +58,6 @@ class PterodactylExampleUITests: XCTestCase {
     func waitForElementToAppear(object: Any) {
         let exists = NSPredicate(format: "exists == true")
         expectation(for: exists, evaluatedWith: object, handler: nil)
-        waitForExpectations(timeout: 5, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
     }
 }

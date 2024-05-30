@@ -55,6 +55,9 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
+## Swift Package Manager
+.swiftpm
+
 ## Xcode Patch
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
@@ -64,5 +67,6 @@ DerivedData/
 
 ### Xcode Patch ###
 **/xcshareddata/WorkspaceSettings.xcsettings
+**/xcshareddata/swiftpm/
 
 # End of https://www.gitignore.io/api/xcode,macos
