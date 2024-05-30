@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1F7936D52BF3C7CA0065A76E /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = 1F7936D42BF3C7CA0065A76E /* Swifter */; };
+		1F84BBAF2C07D32D00F58BCE /* JSONCodingKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F84BBAE2C07D32D00F58BCE /* JSONCodingKeys.swift */; };
+		1F84BBB12C07D35800F58BCE /* JSONObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F84BBB02C07D35800F58BCE /* JSONObject.swift */; };
+		1FC7828A2C07E594007AAF25 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC782892C07E594007AAF25 /* Requests.swift */; };
 		C9093FD4241D3A5F00B7D1BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FD3241D3A5F00B7D1BA /* AppDelegate.swift */; };
 		C9093FD6241D3A5F00B7D1BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FD5241D3A5F00B7D1BA /* ViewController.swift */; };
 		C9093FD8241D3A6100B7D1BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9093FD7241D3A6100B7D1BA /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F84BBAE2C07D32D00F58BCE /* JSONCodingKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JSONCodingKeys.swift; path = ../../PterodactylLib/Classes/JSONCodingKeys.swift; sourceTree = "<group>"; };
+		1F84BBB02C07D35800F58BCE /* JSONObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JSONObject.swift; path = ../../PterodactylLib/Classes/JSONObject.swift; sourceTree = "<group>"; };
+		1FC782892C07E594007AAF25 /* Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Requests.swift; path = ../../PterodactylLib/Classes/Requests.swift; sourceTree = "<group>"; };
 		C9093FD0241D3A5F00B7D1BA /* PterodactylServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PterodactylServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9093FD3241D3A5F00B7D1BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9093FD5241D3A5F00B7D1BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +69,6 @@
 		C9093FD2241D3A5F00B7D1BA /* PterodactylServer */ = {
 			isa = PBXGroup;
 			children = (
-				C9824A0D2729DC3F0025F241 /* StartupOption */,
 				C9093FF6241D552A00B7D1BA /* .gitignore */,
 				C9093FD3241D3A5F00B7D1BA /* AppDelegate.swift */,
 				C9093FE9241D40DE00B7D1BA /* Cartfile */,
@@ -74,6 +79,9 @@
 				C9093FDD241D3A6100B7D1BA /* PterodactylServer.entitlements */,
 				C9093FF1241D521A00B7D1BA /* ServerManager.swift */,
 				C9824A0E2729DE080025F241 /* StartupOption.swift */,
+				1F84BBB02C07D35800F58BCE /* JSONObject.swift */,
+				1F84BBAE2C07D32D00F58BCE /* JSONCodingKeys.swift */,
+				1FC782892C07E594007AAF25 /* Requests.swift */,
 			);
 			path = PterodactylServer;
 			sourceTree = "<group>";
@@ -84,13 +92,6 @@
 				C9093FEC241D50DF00B7D1BA /* Swifter.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C9824A0D2729DC3F0025F241 /* StartupOption */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = StartupOption;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +173,10 @@
 			files = (
 				C9093FD6241D3A5F00B7D1BA /* ViewController.swift in Sources */,
 				C9093FF2241D521A00B7D1BA /* ServerManager.swift in Sources */,
+				1F84BBAF2C07D32D00F58BCE /* JSONCodingKeys.swift in Sources */,
+				1F84BBB12C07D35800F58BCE /* JSONObject.swift in Sources */,
 				C9824A0F2729DE080025F241 /* StartupOption.swift in Sources */,
+				1FC7828A2C07E594007AAF25 /* Requests.swift in Sources */,
 				C9093FD4241D3A5F00B7D1BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +331,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattstanford.PterodactylServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +357,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattstanford.PterodactylServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";

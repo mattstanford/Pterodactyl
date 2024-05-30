@@ -17,10 +17,11 @@ class PterodactylExampleUITests: XCTestCase {
         super.setUp()
         
         continueAfterFailure = false
-        app.launch()
     }
-    
-    func testSimulatorPush() {
+
+    func testSimulatorPush() throws {
+        app.launch()
+
         let notificationRequest = "“PterodactylExample” Would Like to Send You Notifications"
 
         let pterodactyl = Pterodactyl(targetAppBundleId: "com.mattstanford.PterodactylExample")

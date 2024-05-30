@@ -33,29 +33,39 @@ public class Pterodactyl {
     }
     
     public func triggerSimulatorNotification(withFullPayload payload: [String: Any]) {
-        let endpoint = "http://\(host):\(port)/simulatorPush"
-        
+        let endpoint = "http://\(host):\(port)/\(pushEndpoint)"
+
         guard let endpointUrl = URL(string: endpoint) else {
             return
         }
-        
+
         //Make JSON to send to send to server
-        var json = [String:Any]()
-        json["simulatorId"] = ProcessInfo.processInfo.environment["SIMULATOR_UDID"]
-        json["appBundleId"] = targetAppBundleId
-        json["pushPayload"] = payload
-        
-        guard let data = try? JSONSerialization.data(withJSONObject: json, options: []) else {
-            return
-        }
+        let json = PushRequest(
+            simulatorId: ProcessInfo.processInfo.environment["SIMULATOR_UDID"] ?? "booted",
+            appBundleId: targetAppBundleId,
+            pushPayload: JSONObject(payload)
+        )
+
+        let encoder = JSONEncoder()
+        guard let data = try? encoder.encode(json) else { return }
         
         var request = URLRequest(url: endpointUrl)
         request.httpMethod = "POST"
         request.httpBody = data
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-        let task = URLSession.shared.dataTask(with: request)
+        execute(request: request)
+    }
+
+    private func execute(request: URLRequest) {
+        let group = DispatchGroup()
+        group.enter()
+        let task = URLSession.shared.dataTask(with: request) { _, _, _ in
+            // Just wait for the task to complete…
+            group.leave()
+        }
+
         task.resume()
+        group.wait()
     }
     
 }
