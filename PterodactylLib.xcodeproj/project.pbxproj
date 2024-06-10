@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FC782852C07E4AF007AAF25 /* JSONObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC782842C07E4AF007AAF25 /* JSONObject.swift */; };
+		1FC782862C07E4AF007AAF25 /* JSONCodingKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC782832C07E4AF007AAF25 /* JSONCodingKeys.swift */; };
+		1FC782882C07E531007AAF25 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC782872C07E531007AAF25 /* Requests.swift */; };
 		C9093FBF240AE17000B7D1BA /* PterodactylLib.h in Headers */ = {isa = PBXBuildFile; fileRef = C9093FBD240AE17000B7D1BA /* PterodactylLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9093FC6240AE25B00B7D1BA /* Pterodactyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9093FC5240AE25B00B7D1BA /* Pterodactyl.swift */; };
 		C9258B88242808BD003D026E /* PterodactylServer.app in Resources */ = {isa = PBXBuildFile; fileRef = C9258B87242808BD003D026E /* PterodactylServer.app */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FC782832C07E4AF007AAF25 /* JSONCodingKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JSONCodingKeys.swift; path = Classes/JSONCodingKeys.swift; sourceTree = "<group>"; };
+		1FC782842C07E4AF007AAF25 /* JSONObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JSONObject.swift; path = Classes/JSONObject.swift; sourceTree = "<group>"; };
+		1FC782872C07E531007AAF25 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Requests.swift; path = Classes/Requests.swift; sourceTree = "<group>"; };
 		C9093FBA240AE17000B7D1BA /* PterodactylLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PterodactylLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9093FBD240AE17000B7D1BA /* PterodactylLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PterodactylLib.h; path = Classes/PterodactylLib.h; sourceTree = "<group>"; };
 		C9093FBE240AE17000B7D1BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +73,9 @@
 				C9093FBD240AE17000B7D1BA /* PterodactylLib.h */,
 				C9093FBE240AE17000B7D1BA /* Info.plist */,
 				C9093FC5240AE25B00B7D1BA /* Pterodactyl.swift */,
+				1FC782842C07E4AF007AAF25 /* JSONObject.swift */,
+				1FC782832C07E4AF007AAF25 /* JSONCodingKeys.swift */,
+				1FC782872C07E531007AAF25 /* Requests.swift */,
 				C9258B8924280A6F003D026E /* run_server.sh */,
 				C96048DD2435205600641554 /* PterodactylLib.podspec */,
 			);
@@ -173,6 +182,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9093FC6240AE25B00B7D1BA /* Pterodactyl.swift in Sources */,
+				1FC782882C07E531007AAF25 /* Requests.swift in Sources */,
+				1FC782862C07E4AF007AAF25 /* JSONCodingKeys.swift in Sources */,
+				1FC782852C07E4AF007AAF25 /* JSONObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

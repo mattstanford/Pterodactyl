@@ -45,7 +45,7 @@
 	<key>DTXcodeBuild</key>
 	<string>15F31d</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.15</string>
+	<string>11.0</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2020 Matt Stanford. All rights reserved.</string>
 	<key>NSMainStoryboardFile</key>
